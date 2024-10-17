@@ -1,0 +1,29 @@
+-----------------------packages to create new selenium python project---------------
+selenium
+pytest
+pytest-html
+pytest-xdist
+openPyxl
+Allure-pytest
+
+
+-------------------run tests in desired browser------------------------
+pytest -v -s .\test_cases\test_admin_login.py --browser=firefox
+
+--------------------parallel execution---------------------------
+pytest-xdist plugin
+pytest -v -s .\test_cases\test_admin_login.py --browser=firefox -n 3
+n 3 denotes no.of workers run parallel(test cases)
+
+-----------------------html reports------------------------------
+pytest-html plugin
+pytest -v -s --html reports\report.html
+
+
+----------------------------git-----------------
+right click on project inside folders
+click on show more optn
+click on git GUI
+-----git init----- create new repo
+
+
