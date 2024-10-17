@@ -1,5 +1,5 @@
 @echo off
 call C:\Users\Lavanya.Gorrela\PycharmProjects\SeleniumPythonProject\.venv\scripts\activate
-C:\Users\Lavanya.Gorrela\PycharmProjects\SeleniumPythonProject\.venv\Scripts\python -m pytest -v -s .\test_cases\test_admin_login.py
-C:\Users\Lavanya.Gorrela\PycharmProjects\SeleniumPythonProject\.venv\Scripts\python -m pytest -v -s .\test_cases\test_categories.py
+pytest -v -s .\test_cases\test_admin_login.py --html=report_admin_login.html
+pytest -v -s .\test_cases\test_categories.py --html=report_categories.html
 pause
